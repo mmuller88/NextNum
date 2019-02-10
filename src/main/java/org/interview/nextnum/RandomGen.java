@@ -62,7 +62,7 @@ public class RandomGen {
         this.randomGenerator = randomGenerator;
 
         // build the tree map for finding the random number in the interval
-        // So we only need O(long n) for runtime
+        // So we only need O(log n) for runtime
         randomMap = new TreeMap();
         float interval = 0;
         for(int i=0; i<probabilities.length; i++) {
@@ -79,7 +79,6 @@ public class RandomGen {
     public int nextNum() {
         float randFloat = randomGenerator.nextFloat();
         int result = randomMap.ceilingEntry(randFloat).getValue();
-//        System.out.println("randFloat: " + randFloat + " nextNum: " + result);
         return result;
     }
 

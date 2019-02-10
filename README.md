@@ -12,3 +12,12 @@ You may use Random.nextFloat() which returns a pseudo random number between 0 an
 
 # How to use
 Run ```mvn clean install``` for running the unit tests and creating the jar file in /target .
+If you want use the jar library in your local project with adding this dependency to your pom file:
+
+```
+<dependency>
+    <groupId>org.interview</groupId>
+    <artifactId>nextnum</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+```

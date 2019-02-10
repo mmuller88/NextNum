@@ -1,5 +1,6 @@
 package org.interview.nextnum;
 
+
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
